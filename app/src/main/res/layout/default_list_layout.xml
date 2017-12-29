@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/board"
+              android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearL"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="@drawable/islam3"
+        android:baselineAligned="false">
+
+        <Button
+
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:background="@android:drawable/ic_search_category_default"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:background="@android:drawable/ic_menu_manage"
+            />
+
+        <Button
+            android:id="@+id/default_B"
+            android:layout_width="29dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:background="@android:drawable/ic_menu_view"
+            android:onClick="Click"
+            />
+
+
+        <Button
+            android:id="@+id/azkary_B"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:background="@android:drawable/ic_menu_save"
+            android:onClick="Click"
+            />
+
+        <Button
+            android:id="@+id/fav_B"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/bookmark_gold"
+            android:onClick="Click"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_gravity="center"
+        android:id="@+id/defaultList"
+        android:layout_width="310dp"
+        android:layout_height="366dp"
+        android:layout_weight="0.8">
+    </ListView>
+
+    <TextView
+        android:id="@+id/mode_TV"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center|bottom"
+        android:textColor="#cc0099"
+        android:text="الأذكار الأساسية"
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginLeft="275dp"
+        android:id="@+id/addButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/add_icon"
+        android:onClick="addZekr"
+        />
+</LinearLayout>

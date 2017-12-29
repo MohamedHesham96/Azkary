@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.h.azkary.MainActivity"
+                android:background="@drawable/background5">
+
+    <LinearLayout
+        android:background="@drawable/islam3"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/linearL"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:background="@drawable/add_icon"
+            android:layout_marginLeft="35dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:background="@drawable/check_icon"
+            android:layout_marginLeft="40dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:id="@+id/button2"/>
+
+        <Button
+            android:background="@drawable/save_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:background="@drawable/bookmark_gold"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_gravity="center"
+            android:id="@+id/button"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/myAzkarButton"
+        android:layout_below="@+id/defaultAzkarButton"
+        style="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+        android:textStyle="bold"
+        android:onClick="Click"
+        android:layout_width="@dimen/Weidth"
+        android:layout_height="@dimen/Height"
+        android:textSize="@dimen/textSize"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginTop"
+        android:background="@drawable/islam"
+        android:textColor="#0022ff"
+        android:text="الأذكار المضافة"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText,SpUsage"/>
+
+
+    <Button
+        android:id="@+id/alarmButton"
+        android:layout_below="@+id/myFavButton"
+        style="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+        android:textStyle="bold"
+        android:layout_width="@dimen/Weidth"
+        android:layout_height="@dimen/Height"
+        android:textSize="@dimen/textSize"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginTop"
+        android:background="@drawable/islam"
+        android:textColor="#0022ff"
+        android:text="التنبيهات"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText,SpUsage"/>
+
+
+    <Button
+        android:id="@+id/SettingButton"
+        style="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_width="@dimen/Weidth"
+        android:layout_height="@dimen/Height"
+        android:textSize="@dimen/textSize"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/islam"
+        android:textColor="#0022ff"
+        android:text="الاعدادات"
+        android:layout_below="@+id/alarmButton"
+        />
+    <Button
+
+        android:onClick="Click"
+        android:id="@+id/myFavButton"
+        style="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+        android:textStyle="bold"
+        android:layout_width="@dimen/Weidth"
+        android:layout_height="@dimen/Height"
+        android:textSize="25dp"
+        android:background="@drawable/islam"
+        android:textColor="#0022ff"
+        android:text="الأذكار المفضلة"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText,SpUsage" android:layout_below="@+id/myAzkarButton"
+        android:layout_alignLeft="@+id/myAzkarButton"
+        android:layout_alignStart="@+id/myAzkarButton"/>
+    <Button
+        android:onClick="Click"
+        android:id="@+id/defaultAzkarButton"
+        style="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+        android:textStyle="bold"
+        android:layout_width="@dimen/Weidth"
+        android:layout_height="@dimen/Height"
+        android:textSize="@dimen/textSize"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/islam"
+        android:textColor="#0022ff"
+        android:text="الأذكار الأساسية"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText,SpUsage" android:layout_below="@+id/linearL"
+        android:layout_alignLeft="@+id/myAzkarButton"
+        android:layout_alignStart="@+id/myAzkarButton"/>
+
+</RelativeLayout>

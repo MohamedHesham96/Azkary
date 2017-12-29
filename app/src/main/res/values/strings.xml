@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Azkary</string>
+    <string-array name="defaultAzkar">
+        <item>الحمد لله</item>
+        <item>سبحان الله</item>
+        <item>استغفر الله</item>
+    </string-array>
+
+    <string-array name="defaultDesc">
+        <item>Allah 1</item>
+        <item>Sobhan allah 2</item>
+        <item>alhamdo llah 3</item>
+    </string-array>
+
+</resources>
